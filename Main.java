@@ -12,6 +12,9 @@ public class Main {
             test.add(0, 50);
             System.out.println(test);
 
+            test.remove(3);
+            System.out.println(test);
+
 
 
 
