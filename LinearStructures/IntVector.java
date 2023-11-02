@@ -1,3 +1,4 @@
+package LinearStructures;
 public class IntVector {
 
     private final static int INITIAL_CAPACITY = 10;
@@ -50,7 +51,7 @@ public class IntVector {
         size = 0;
     }
 
-    public boolean add(int index, int value) {
+    public void add(int index, int value) {
         testBounds(index);
         int temp = arr[index];
         arr[index] = value;
@@ -59,10 +60,6 @@ public class IntVector {
             arr[i + 1] = arr[i];
         }
         arr[index + 1] = temp;
-        if(arr[index] == value) {
-            return true;
-        }
-        return false;
     }
 
     public boolean remove(int value) {
