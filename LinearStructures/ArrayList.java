@@ -29,7 +29,9 @@ public class ArrayList<E> {
     }
 
     public void add(int index, E e) {
-        checkIndex(index);
+        if(index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("index " + index + " out of bounds");
+        }
         ensureCapacity();
         for(int i = size - 1; i >= index; i--) {
             data[i + 1] = data[i];
