@@ -17,6 +17,10 @@ public class Start {
         System.out.println(testInt);
         System.out.println(testString);
 
+        for(String x : testString) {
+            System.out.println(x);
+        }
+
 
     }
 }
