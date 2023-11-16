@@ -3,7 +3,7 @@ package LinearStructures;
 import java.lang.Iterable;
 import java.util.Iterator;
 
-public class ArrayList<E> implements Iterable<E>  {
+public class ArrayList<E> implements Iterable<E> {
     protected static final int INITIAL_CAPACITY = 10;
     private int size = 0;
 
