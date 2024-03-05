@@ -1,6 +1,4 @@
-import LinearStructures.ArrayList;
-import LinearStructures.LinkedList;
-
+package LinearStructures;
 public class Start {
     public static void main(String[] args) {
         LinkedList<Integer> testInt = new LinkedList<>();
